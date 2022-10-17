@@ -5,7 +5,6 @@ using UnityEngine;
 public class HandTracking : MonoBehaviour
 {
 
-    // Start is called before the first frame update
     public UDPReceive udpReceive;
     public GameObject[] handPoints;
     void Start()
@@ -13,7 +12,6 @@ public class HandTracking : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         string data = udpReceive.data;
